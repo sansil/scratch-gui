@@ -25,7 +25,26 @@ import wedoPeripheralImage from './peripheral-connection/wedo/wedo-illustration.
 import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
 
+import markpng from './mark.png';
+import marklogo2 from './marklogo2.jpg';
+
 export default [
+    {
+        name: 'Mark Scratch Extension',
+        extensionId: 'mark',
+        collaborator: 'Sansil',
+        iconURL: marklogo2,
+        insetIconURL: markpng,
+        description: (
+            <FormattedMessage
+                defaultMessage="Kit de robótica modular"
+                description="descripcion"
+                id="gui.extension.makeymakey.descriptions"
+            />
+        ),
+        featured: true,
+        helpLink: 'https://markrobots.cc'
+    },
     {
         name: (
             <FormattedMessage
